@@ -25,7 +25,7 @@
         <van-cell class="mobile-border mobile-margin-top" title="　github.com/lss94" icon="sign" url="https://github.com/lss94"
             is-link />
 
-        <van-cell class="mobile-border mobile-margin-top" title="　Project Source" icon="logistics" url="https://github.com/GitHub-Laziji/VBlog"
+        <van-cell class="mobile-border mobile-margin-top" title="　Project Source" icon="logistics" url="https://github.com/lss94/MyBlog"
             is-link />
 
         <van-cell class="mobile-border mobile-margin-top" title="　Other Blog" icon="password-view" :url="blog" is-link />
