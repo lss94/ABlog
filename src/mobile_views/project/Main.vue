@@ -1,10 +1,10 @@
 <template>
     <div :style="'background: #f8f8f8;min-height: '+windowSize.height+'px'">
-        <van-nav-bar style="position:fixed;top:0;z-index: 9999; box-shadow: 0px -3px 10px #888888;width: 100%;" title="开源项目" right-text="分享"
+        <van-nav-bar style="position:fixed;top:0;z-index: 9999; box-shadow: 0px -3px 10px #888888;width: 100%;" title="Open Source" right-text="Share"
             @click-right="$mobileShare()" />
         <div style="height: 60px;"></div>
         <router-link :to="`/mobile/user/project/details/${item.name}`" v-for="(item,index) in projects" :key="'p'+index" style=" text-decoration:none;cursor:pointer">
-            <van-panel style="margin-bottom: 10px" :title="item.name" :desc="'更新时间 '+item.updateTime">
+            <van-panel style="margin-bottom: 10px" :title="item.name" :desc="'Updated at '+item.updateTime">
                 <div style="padding: 7px 15px 7px 15px;color: #303133;font-size: 0.9rem">{{item.description}}</div>
                 <div style="padding: 0px 15px 5px 15px;color: #303133;">
                     <van-row>

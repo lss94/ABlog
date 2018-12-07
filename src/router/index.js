@@ -196,7 +196,7 @@ export const constantRouterMap = [
     meta: {
       type: 'mobile',
       icon: 'edit',
-      title: '博客'
+      title: 'Blog'
     },
     children: [
       {
@@ -223,7 +223,7 @@ export const constantRouterMap = [
     meta: {
       type: 'mobile',
       icon: 'like-o',
-      title: '项目'
+      title: 'Project'
     },
     children: [
       {
@@ -250,7 +250,7 @@ export const constantRouterMap = [
     meta: {
       type: 'mobile',
       icon: 'contact',
-      title: '个人'
+      title: 'Personal'
     },
     children: [
       {

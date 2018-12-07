@@ -1,11 +1,11 @@
 <template>
     <div>
         <van-nav-bar style="position:fixed;top:0;z-index: 9999; box-shadow: 0px -5px 10px #888888;width: 100%;" :title="project.name"
-            left-text="返回" right-text="分享" @click-left="$router.go(-1)" @click-right="$mobileShare()" left-arrow/>
+            left-text="Back" right-text="Share" @click-left="$router.go(-1)" @click-right="$mobileShare()" left-arrow/>
         <div style="height: 60px;"></div>
         <div style="font-size: 0.9rem;line-height: 1.5;color: #606c71;padding: 10px">
-            发布 {{project.createTime}}
-            <br> 更新 {{project.updateTime}}
+            Created at {{project.createTime}}
+            <br> Updated at {{project.updateTime}}
         </div>
         <div style="font-size: 1.0rem;line-height: 1.5;color: #303133;padding: 10px">
             {{project.description}}

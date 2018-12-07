@@ -1,7 +1,7 @@
 <template>
 
     <div :style="'background: #f8f8f8;min-height: '+windowSize.height+'px'">
-        <van-nav-bar style="position:fixed;top:0;z-index: 9999; box-shadow: 0px -3px 10px #888888;width: 100%;" title="个人中心" />
+        <van-nav-bar style="position:fixed;top:0;z-index: 9999; box-shadow: 0px -3px 10px #888888;width: 100%;" title="Personal Center" />
         <div style="height: 60px;"></div>
         <van-row style="background: #ffffff;" class="mobile-border">
             <van-col span="8" style="padding: 10px 10px 5px 10px">
@@ -17,18 +17,18 @@
                 <font style="color:#606266;font-size: 13px;line-height:13px;">
                     <van-icon name="location" />&emsp;{{location}}</font>
                 <br>
-                <font style="color:#606266;font-size: 13px;line-height:13px;">粉丝&nbsp;{{followersTotal}}</font>&emsp;
-                <font style="color:#606266;font-size: 13px;line-height:13px;">关注&nbsp;{{followingTotal}}</font>
+                <font style="color:#606266;font-size: 13px;line-height:13px;">Fans&nbsp;{{followersTotal}}</font>&emsp;
+                <font style="color:#606266;font-size: 13px;line-height:13px;">Focus&nbsp;{{followingTotal}}</font>
             </van-col>
         </van-row>
 
-        <van-cell class="mobile-border mobile-margin-top" title="　github.com/GitHub-Laziji" icon="sign" url="https://github.com/GitHub-Laziji"
+        <van-cell class="mobile-border mobile-margin-top" title="　github.com/lss94" icon="sign" url="https://github.com/lss94"
             is-link />
 
-        <van-cell class="mobile-border mobile-margin-top" title="　项目源码" icon="logistics" url="https://github.com/GitHub-Laziji/VBlog"
+        <van-cell class="mobile-border mobile-margin-top" title="　Project Source" icon="logistics" url="https://github.com/GitHub-Laziji/VBlog"
             is-link />
 
-        <van-cell class="mobile-border mobile-margin-top" title="　其他博客" icon="password-view" :url="blog" is-link />
+        <van-cell class="mobile-border mobile-margin-top" title="　Other Blog" icon="password-view" :url="blog" is-link />
 
     </div>
 </template>

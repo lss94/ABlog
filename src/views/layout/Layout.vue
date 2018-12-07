@@ -2,7 +2,7 @@
     <div>
         <section class="page-header" :style="'background-image: linear-gradient(120deg, '+backgroundColorLeft+', '+backgroundColorRight+');color: '+fontColor+';'">
             <div style="position:absolute; top:20px; right:20px; z-index:2;">
-                <el-tooltip effect="dark" :content="fullButton.full?'退出':'全屏'" placement="bottom-end">
+                <el-tooltip effect="dark" :content="fullButton.full?'Exit':'Full Screen'" placement="bottom-end">
                     <el-button @click="full" :icon="fullButton.full?'el-icon-close':'el-icon-rank'" circle></el-button>
                 </el-tooltip>
             </div>
@@ -13,21 +13,21 @@
             </div>
             <h1 class="project-name">{{blogTitle}}</h1>
             <h2 class="project-tagline">{{blogDescribe}}</h2>
-            <a :href="'https://github.com/'+githubUsername" class="btn" target="_blank">GitHub主页</a>
-            <a href="https://github.com/lss94/MyBlog" class="btn" target="_blank" v-if="!mini">博客源码</a>
+            <a :href="'https://github.com/'+githubUsername" class="btn" target="_blank">Github Home</a>
+            <a href="https://github.com/lss94/MyBlog" class="btn" target="_blank" v-if="!mini">Blog Source</a>
         </section>
-        <div style="position:relative;  z-index:2;margin: auto;margin-top:-30px;width:64rem;">
+        <div style="position:relative; z-index:2; margin:auto; margin-top:-30px; width:64rem;">
             <el-card shadow="never" :body-style="{ padding: '0px' }">
                 <el-row>
                     <el-col :span="10">
                         <el-menu @select="selectTopbar" :default-active="topbar.active" mode="horizontal" menu-trigger="click">
-                            <el-submenu index="#more">
-                                <template slot="title">了解博主</template>
-                                <el-menu-item index="#githubHome">github主页</el-menu-item>
-                                <el-menu-item index="#blog">其他博客</el-menu-item>
+                            <el-submenu index="#more" style="border-bottom:solid 1px #e6e6e600">
+                                <template slot="title">Bloggers</template>
+                                <el-menu-item index="#githubHome">Github Home</el-menu-item>
+                                <el-menu-item index="#blog">Other Blog</el-menu-item>
                             </el-submenu>
                             <el-submenu index="#webSites" v-if="webSites.length>0">
-                                <template slot="title">其他网站</template>
+                                <template slot="title">Other Web</template>
                                 <el-menu-item :index="'#webSites-'+index" v-for="(item,index) in webSites" :key="'#webSites'+index">{{item.name}}</el-menu-item>
                             </el-submenu>
                         </el-menu>
@@ -66,7 +66,7 @@
                             <b>{{githubUsername}}</b>
                         </div>
                         <div style="color:#606266;">
-                            <i class="el-icon-location"></i>&nbsp;{{location?location:'未填写地址'}}
+                            <i class="el-icon-location"></i>&nbsp;{{location?location:'Unfilled address'}}
                             <br>
                         </div>
                     </el-col>

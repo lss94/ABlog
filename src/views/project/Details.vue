@@ -16,8 +16,8 @@
                 </el-row>
             </div>
             <div style="font-size: 0.9rem;line-height: 1.5;color: #606c71;">
-                发布 {{project.createTime}}
-                <br> 更新 {{project.updateTime}}
+                Created at {{project.createTime}}
+                <br> Updated at {{project.updateTime}}
             </div>
             <div style="font-size: 1.1rem;line-height: 1.5;color: #303133;padding: 20px 0px 0px 0px">
                 {{project.description}}

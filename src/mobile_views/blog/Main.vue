@@ -1,10 +1,10 @@
 <template>
     <div :style="'background: #f8f8f8;min-height: '+windowSize.height+'px'">
-        <van-nav-bar style="position:fixed;top:0;z-index: 9999; box-shadow: 0px -3px 10px #888888;width: 100%;" title="博客列表" right-text="分享"
+        <van-nav-bar style="position:fixed;top:0;z-index: 9999; box-shadow: 0px -3px 10px #888888;width: 100%;" title="Blog List" right-text="Share"
             @click-right="$mobileShare()" />
         <div style="height: 60px;"></div>
         <router-link :to="`/mobile/user/blog/details/${item.id}`" v-for="(item,index) in blogs" :key="'p'+index">
-            <van-panel style="margin-bottom: 10px" :title="item.title" :desc="'更新时间 '+item.updateTime">
+            <van-panel style="margin-bottom: 10px" :title="item.title" :desc="'Updated at '+item.updateTime">
                 <div style="padding: 7px 15px 7px 15px;color: #303133;font-size: 0.9rem">{{$util.cutStr(item.description,50)}}</div>
             </van-panel>
         </router-link>
